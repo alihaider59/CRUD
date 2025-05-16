@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: whitesmoke;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        margin-top: 5px;
+        border: 5px solid black;
+        border-top: 10px solid black;
+        width: 90%;
+    }
+
+    th {
+        background: burlywood;
+        padding: 10px 15px;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    tbody tr:nth-child(even) {
+        background: gainsboro;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>ali123</td>
+                <td>ali@gmial.com</td>
+                <td>delete</td>
+                <td>edit</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>ali123</td>
+                <td>ali@gmial.com</td>
+                <td>delete</td>
+                <td>edit</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

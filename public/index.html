@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <label for="">Email</label>
-    <input type="email" name="" id="email"> 
-    <label for="">Password</label>
-    <input type="password" name="" id="password">
-    <button onclick="postEmail()">Click</button>
-    <button onclick="getUser()">GET</button>
-    <button onclick="patchEmail()">Update</button>
-    <div id="data"></div>
-    <script src="script.js"></script>
+    <div id="mainDiv">
+        <div id="form">
+            <h1>Sign Up</h1>
+            <div>
+                <h4>Full Name</h4>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <h4 for="">username</h4>
+                <input type="text" id="userN">
+            </div>
+            <div>
+                <h4 for="">Email</h4>
+                <input type="email" id="confirmpassword">        
+            </div>
+            <div>
+                <h4 for="">Password</h4>
+                <input type="password" id="passW">
+            </div>
+            <button onclick="postUser()">Sign Up</button>
+            <button onclick="patchUser()">Update</button>
+            <button onclick="putUser()">Replace</button>
+            <a href="table.html"><button onclick="getData()">Get Users</button></a>
+            <div id="signUp" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <span>Already have an account?</span>
+                <p onclick="Login()">Log In</p>
+            </div>
+        </div>
+
+        <div style="margin-left: 20px;" id="data"></div>
+
+        <div id="form" class="active login">
+            <h1>Login</h1>
+            <div>
+                <h4 for="">username</h4>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <h4 for="">Password</h4>
+                <input type="password" id="password">
+            </div>
+            <button onclick="loginUser()">Log In</button>
+            <div id="signUp" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                <span>Create new account?</span>
+                <p onclick="signUp()">Sign Up</p>
+            </div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
 </body>
-</html> 
+
+</html>

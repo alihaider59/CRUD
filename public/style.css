@@ -1,0 +1,94 @@
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#cbceede2;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form {
+    background-color: #272754;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+    padding: 20px 25px 30px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#form div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#form h4 {
+    color: rgb(181, 191, 229);
+    margin-bottom: 5px;
+}
+
+#form input {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#form button {
+    background: rgb(181, 191, 229);
+    font-weight: 800;
+    align-self: center;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#form button:hover {
+    cursor: pointer;
+    background: rgba(181, 191, 229, 0.845)
+}
+
+span {
+    font-size: 14px;
+    color: rgb(181, 191, 229);
+    padding-top: 10px;
+    width: 46%;
+}
+
+#form h1 {
+    color: rgb(162, 173, 221);
+    margin-bottom: 10px;
+}
+
+#signUp {
+    border-top: 1px solid rgba(181, 191, 229, 0.4);
+    padding: 5px 0px;
+}
+
+#signUp p {
+    color: white;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+#signUp p:hover {
+    color: gold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.active {
+    display: none;
+}
